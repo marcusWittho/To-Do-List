@@ -141,7 +141,7 @@ body {
 }
 
 .line-color {
-  width: 150px;
+  width: 400px;
   height: 24px;
   background-color: rgb(94, 204, 255);
   border-radius: 10% 100% 100% 10% / 20% 100% 100% 20%;
