@@ -3,35 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>To Do List</title>
 </head>
 <body>
-  <header>
-    <h1>Minha Lista de Tarefas</h1>
+  <header class="header">
+    <h1 class="title">Lista de Tarefas</h1>
   </header>
 
+  <input type="text" id="texto-tarefa" class="texto-tarefa" placeholder="Digite aqui a sua tarefa">
+  <button id="criar-tarefa" class="criar-tarefa">Adicionar</button>
+
+  <section class="main">
+    <ol id="lista-tarefas"></ol>
+
+    <div class="btn-container">
+      <button id="salvar-tarefas" class="btn salvar-tarefas">Salvar</button>
+
+      <button id="apaga-tudo" class="btn apaga-tudo">Remover tarefas</button>
+
+      <button id="remover-finalizados" class="btn remover-finalizados">Remover finalizados</button>
+
+      <button id="remover-selecionado" class="btn remover-selecionado">Remover selecionado</button>
+
+      <button id="mover-cima" class="btn mover-cima">Mover para cima</button>
+
+      <button id="mover-baixo" class="btn mover-baixo">Mover para baixo</button>
+    </div>
+  </section>
+
   <p id="funcionamento">
-    Clique duas vezes em um item para marcá-lo como completo
+    * Clique duas vezes em um item para marcá-lo como completo
   </p>
-
-  <input type="text" id="texto-tarefa">
-
-  <button id="criar-tarefa">Adicionar</button>
-
-  <ol id="lista-tarefas"></ol>
-
-  <button id="salvar-tarefas">Salvar</button>
-
-  <button id="apaga-tudo">Remover tarefas</button>
-
-  <button id="remover-finalizados">Remover finalizados</button>
-
-  <button id="remover-selecionado">Remover selecionado</button>
-
-  <button id="mover-cima">Mover para cima</button>
-
-  <button id="mover-baixo">Mover para baixo</button>
 
   <script src="script.js"></script>
 </body>
