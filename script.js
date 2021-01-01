@@ -39,9 +39,14 @@ function setTask() {
 
 // Evento que adiciona uma nova tarefa
 btnCreateTask.addEventListener('click', () => {
-  setTask();
-  textoTarefa.value = '';
-  textoTarefa.focus();
+  if (textoTarefa.value !== '') {
+    setTask();
+    textoTarefa.value = '';
+    textoTarefa.focus();
+  } else {
+    alert('Campo vazio.');
+    return;
+  }
 });
 
 // Evento para colocar ou remover a cor da linha selecionada

@@ -18,7 +18,7 @@ body {
   border: none;
   outline: none;
   width: 380px;
-  border-bottom: 2px solid rgb(0, 174, 255);
+  border-bottom: 2px solid rgb(54, 191, 255);
 }
 
 .criar-tarefa {
@@ -26,14 +26,26 @@ body {
   outline: none;
   width: 100px;
   height: 26px;
-  background-color: rgb(0, 174, 255);
+  background-color: rgb(54, 191, 255);
   color: aliceblue;
   font-family: Indie Flower, cursive;;
   font-weight: 600;
   letter-spacing: 1px;
   border-radius: 16px;
   padding-top: 4px;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease;
+}
+
+.criar-tarefa:hover {
+  cursor: pointer;
+  background-color: rgb(24, 172, 240);
+  box-shadow: 0 0 8px 0 rgba(54, 191, 255, 0.3) inset, 0 0 10px 4px rgba(54, 191, 255, 0.3);
+}
+
+.criar-tarefa:active {
+  transition: 25ms ease;
+  opacity: 50%;
 }
 
 .main {
@@ -63,22 +75,49 @@ body {
   outline: none;
   width: 150px;
   height: 32px;
-  background-color: rgb(0, 174, 255);
   color: rgb(55, 55, 55);
   font-family: Indie Flower, cursive;;
   font-weight: 600;
   letter-spacing: 1px;
   border-radius: 7px;
   padding-top: 4px;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease;
+}
+
+.btn:active {
+  transition: 25ms ease;
+  opacity: 50%;
 }
 
 .salvar-tarefas {
-  background-color: rgb(51, 255, 143);
+  background-color: rgb(132, 255, 188);
+}
+
+.salvar-tarefas:hover {
+  cursor: pointer;
+  background-color: rgb(12, 209, 101);
+  box-shadow: 0 0 8px 0 rgba(12, 209, 101, 0.3) inset, 0 0 10px 4px rgba(12, 209, 101, 0.3);
 }
 
 .apaga-tudo, .remover-finalizados, .remover-selecionado {
-  background-color: rgb(250, 120, 122);
+  background-color: rgb(255, 146, 148);
+}
+
+.apaga-tudo:hover, .remover-finalizados:hover, .remover-selecionado:hover {
+  cursor: pointer;
+  background-color: rgb(240, 120, 122);
+  box-shadow: 0 0 8px 0 rgba(255, 118, 121, 0.3) inset, 0 0 10px 4px rgba(255, 118, 121, 0.3);
+}
+
+.mover-cima, .mover-baixo {
+  background-color: rgb(93, 204, 255);
+}
+
+.mover-cima:hover, .mover-baixo:hover {
+  cursor: pointer;
+  background-color: rgb(86, 186, 252);
+  box-shadow: 0 0 8px 0 rgba(86, 186, 252, 0.3) inset, 0 0 10px 4px rgba(86, 186, 252, 0.3);
 }
 
 .tarefas {
